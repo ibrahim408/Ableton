@@ -11,6 +11,10 @@
     justify-content: space-between;
 }
 
+.nav-menu{
+    display: none;
+}
+
 .nav-main-links{
     display: flex;
     align-items: center;
@@ -36,7 +40,6 @@ a {
     font-size: 1.25rem;
     line-height: 1.5;
     font-weight: bold;
-
 }
 
 .try-live-link{
@@ -76,4 +79,28 @@ a {
 
 .orange-link {
     color: #FF764D;
+}
+
+
+@media (max-width: 1050px){
+    .nav-main{
+    }
+    .nav-main-links{
+        display: none;
+    }
+    .nav-actions{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+        align-items: center;
+    }
+    .nav-menu-link{
+        margin-right: 10px;
+        margin-left: 30px;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+
 }

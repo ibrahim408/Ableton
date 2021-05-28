@@ -1,6 +1,6 @@
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLayerGroup } from '@fortawesome/free-solid-svg-icons'
+import { faLayerGroup, faSortDown } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar(){
     return (
@@ -18,6 +18,11 @@ function Navbar(){
                 <div className="nav-actions">
                     <a className="nav-links try-live-link" href="">Try Live for free</a>
                     <a className="nav-links log-in-link" href="">Log in or register</a>
+                </div>
+                <div className="nav-menu">
+                    <FontAwesomeIcon style={{fontSize: 35}} icon={faLayerGroup} />
+                    <a className="nav-menu-link" href="">Menu</a>     
+                    <FontAwesomeIcon style={{fontSize: 14}} icon={faSortDown} />    
                 </div>
             </div>
 
