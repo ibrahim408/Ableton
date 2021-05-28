@@ -21,7 +21,7 @@ function Navbar(){
                 </div>
             </div>
 
-            <div className="line-break"></div>
+            <div className="navbar__line-break"></div>
 
             <div className="nav-secondary">
                 <a className="secondary-links orange-link" href="">About</a>

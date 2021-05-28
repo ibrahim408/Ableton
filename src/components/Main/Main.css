@@ -251,7 +251,13 @@
     color: blue;
 }
 
+.page-about-collage-four__right__content a{
+    display: flex;
+    align-items: center;
+}
+
 .arrow {
+    margin-left: 5px;
     border: solid blue;
     border-width: 0 3px 3px 0;
     display: inline-block;
@@ -262,3 +268,220 @@
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
   }
+
+  .line-break{
+    margin-top: 8em;
+    width: 100%;
+    border-bottom: 2px solid #eee;
+}
+
+.footer{
+    margin-top: 8em;
+    margin-bottom: 4em;
+    width: 90%;
+}
+
+
+.footer__foot-row{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.reverse{
+    flex-direction: column-reverse;
+}
+
+
+.footer__foot-row__foot-column{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (min-width: 1050px) {
+    .footer__foot-row {
+        margin-bottom: 20px;
+        flex-direction: row;
+    }
+    .footer__foot-row__foot-column:first-child{
+        flex: 3;
+    }
+    .footer__foot-row__foot-column:nth-child(2){
+        flex: 3;
+    }
+    .footer__foot-row__foot-column:nth-child(3){
+        flex: 4;
+    }
+
+    .footer__foot-row__foot-column{
+        /* flex-direction: row; */
+    }
+}
+
+.footer__foot-row__foot-column a{
+    font-size: .85rem;
+}
+
+.footer__foot-row__foot-column p{
+    font-size: .85em;
+    font-weight: bold;
+}
+
+
+.footer__foot-row__foot-row{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__foot-row__foot-column_sign-up{
+    margin-top: 1.5em;
+    display: flex;
+    background-color: pink;
+}
+
+
+.footer__foot-row__foot-column_sign-up input{
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    background-color: #eee;
+    border: none;
+}
+
+.footer__foot-row__foot-column_sign-up button{
+    white-space: nowrap;
+    padding: .6rem 3.5em;
+    color: white;
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    background-color: blue;
+    border: none;
+}
+
+
+.footer__foot-row__foot-column a{
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__foot-row__foot-column p{
+    margin-top: 5px;
+}
+
+.arrow-small {
+    margin-left: 3px;
+    border: solid grey;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2px;
+}
+
+.footer__foot-row__foot-column__social-media{
+    margin-top: 1em;
+    display: flex;
+}
+.footer__foot-row__foot-column__social-media__box{
+    box-sizing: border-box;
+    padding: .5em;
+    margin-right: 1em;
+    background-color: #3477F2;
+}
+
+.footer__foot-row__foot-column__social-media :nth-child(2) {
+    background-color: #1DA1F2;
+}
+.footer__foot-row__foot-column__social-media :nth-child(3) {
+    background-color: #FF001D;
+}
+.footer__foot-row__foot-column__social-media :nth-child(4) {
+    background-color: #F77737;
+}
+
+.social-media-icon {
+    color: #fff;
+    font-size: 1.575em;
+}
+
+.footer__foot-row__foot-column__select{
+    margin-top: 1.1em;
+    background-color: transparent;
+    display: flex;
+}
+
+.select-wrapper{
+    margin-right: .3em;
+}
+
+select {
+    appearance: none;
+    border: none;
+    background-color: #eee;
+    padding: .35em 50px .35em .75em;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    cursor: pointer;
+}
+
+.footer__foot-last-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__foot-row__secondary-link{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__foot-row__secondary-link a{
+    margin-bottom: .5em;
+    font-size: .775rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.footer__foot-row__foot-row__logo{
+    font-size: 1.575em;
+}
+
+span {
+    margin-left: 1em;
+    font-size: .775rem;
+    line-height: 1.5;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+
+#text-style-normal{
+    font-weight: normal;
+}
+
+
+@media only screen and (min-width: 1050px) {
+    .footer__foot-last-row{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer__foot-row__secondary-link{
+        flex-direction: row;
+    }
+    .footer__foot-row__secondary-link a{
+        margin-right: .9em;
+    }
+
+    .footer__foot-row__foot-row{
+        flex-direction: row-reverse;
+    }
+    span{
+        margin-right: 1em;
+    }
+}
